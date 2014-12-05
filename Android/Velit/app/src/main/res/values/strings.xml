@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Velit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="charging">Charging</string>
+    <string name="seeStations">Go see the stations !</string>
+    <string name="chooseCity">Choose a city</string>
+    <string name="chooseBrand">Choose a bike brand</string>
+    <string name="chooseOptions">Choose more options</string>
+    <string name="open">Open</string>
+    <string name="freeSpace">Free space</string>
+    <string name="title_activity_advanced_options">Filters</string>
+    <!-- Advanced Options -->
+    <string name="city">City</string>
+    <string name="minFreeSpace">Minimum available space</string>
+    <string name="minFreeBike">Minimum available bike</string>
+    <string name="banking">Banking available</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="action_validate">Validate</string>
+    <string name="closed">Closed</string>
+    <string name="freeBike">Available bike :</string>
+    <string name="availableStands">Available stands :</string>
+    <string name="noBanking">Banking not available</string>
+    <string name="title_activity_route">RouteActivity</string>
+    <string name="language">en</string>
+    <string name="distanceSystem">metric</string>
+    <string name="gps">GPS</string>
+    <string name="noRoute">Unable to calculate route</string>
+    <string name="retry">Retry</string>
+    <string name="action_clear">Clear all filters</string>
+
+</resources>

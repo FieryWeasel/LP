@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lp.kazuya.velit.view.AdvancedOptionsActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/city"
+            android:textSize="@dimen/normal"/>
+
+        <TextView
+            android:id="@+id/cityChosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="end"
+            android:layout_alignRight="@+id/city"
+            android:layout_alignEnd="@+id/city"
+            android:textStyle="italic"
+            android:textSize="@dimen/normal"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/minFreeBike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/minFreeBike"
+            android:textSize="@dimen/normal"/>
+        <TextView
+            android:id="@+id/minFreeBikeChosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="end"
+            android:layout_alignRight="@+id/minFreeBike"
+            android:layout_alignEnd="@+id/minFreeBike"
+            android:textStyle="italic"
+            android:textSize="@dimen/normal"/>
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/minFreeSpace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/minFreeSpace"
+            android:textSize="@dimen/normal"/>
+        <TextView
+            android:id="@+id/minFreeSpaceChosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="end"
+            android:layout_alignRight="@+id/minFreeSpace"
+            android:layout_alignEnd="@+id/minFreeSpace"
+            android:textStyle="italic"
+            android:textSize="@dimen/normal"/>
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <Switch
+        android:id="@+id/bankingSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/banking"
+        android:textSize="@dimen/normal"
+        android:layout_gravity="start" />
+
+    <Switch
+        android:id="@+id/openSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/open"
+        android:textSize="@dimen/normal"
+        android:layout_gravity="start" />
+
+</LinearLayout>
