@@ -1,0 +1,38 @@
+package Tennis;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Game {
+
+	private Map<Player, String> game;
+	
+	public Game(Player player1, Player player2){
+		game = new HashMap<Player, String>();
+		game.put(player1, "0");
+		game.put(player2, "0");
+	}
+	
+	public boolean gameWon(Player player){
+		boolean playerWon = false;
+		
+		if(game.get(player).equals(Constants.GAME.ADVANTAGE))
+			playerWon = true;
+			
+		return playerWon;
+	}
+	
+	public void playerWinPoint(Player player){
+		
+		if(game.get(player).equals(Constants.GAME.FIRST)){
+			game.put(player, Constants.GAME.SECOND);
+		}else if(game.get(player).equals(Constants.GAME.SECOND)){
+			game.put(player, Constants.GAME.THIRD);
+		}else if(game.get(player).equals(Constants.GAME.THIRD)){
+			game.put(player, Constants.GAME.ADVANTAGE);
+		}else if(game.get(player).equals(Constants.GAME.ADVANTAGE)){
+			game.put(player, Constants.GAME.THIRD);
+		}
+	}
+	
+}
