@@ -38,7 +38,7 @@
                                             green:(197.0/255)
                                              blue:(115.0/255)
                                             alpha:1];
-    [self completionHandler](green);
+    [[self delegate] userDidChooseColor:green];
 }
 
 - (IBAction)changeToOrange:(id)sender {
@@ -46,8 +46,7 @@
                                              green:(102.0/255)
                                               blue:(6.0/255)
                                              alpha:1];
-//    [[self delegate] userDidChooseColor:orange];
-    [self completionHandler](orange);
+    [[self delegate] userDidChooseColor:orange];
 }
 
 - (IBAction)changeToRed:(id)sender {
@@ -55,7 +54,7 @@
                                           green:(0.0/255)
                                            blue:(47.0/255)
                                           alpha:1];
-    [self completionHandler](red);
+    [[self delegate] userDidChooseColor:red];
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  TestDelegate
 //
 //  Created by iem on 11/12/2014.
@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ColorPicker.h"
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@interface ViewController : UIViewController </*ColorPickerDelegate, */UIAlertViewDelegate>
+@property (strong, nonatomic) UIWindow *window;
+
 
 @end
 

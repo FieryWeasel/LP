@@ -40,9 +40,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([[segue identifier] isEqualToString:@"PickColor"]){
     ColorPicker *destinationController = [segue destinationViewController];
-        destinationController.completionHandler = ^(UIColor *color){
-            [self userDidChooseColor:color];
-        };
+    [destinationController setDelegate:self];
     }
 }
 
@@ -64,19 +62,6 @@
     if(buttonIndex == alertView.cancelButtonIndex){
         self.view.backgroundColor = _previousColor;
     }
-}
-- (IBAction)filtrer:(id)sender {
-    NSArray *array = @[@"Obelix", @"Idefix", @"Abraracourcix"];
-    
-    BOOL (^test)(id obj, NSUInteger index, BOOL *stop);
-    test = ^(id obj, NSUInteger index, BOOL *stop){
-        NSString *str = (NSString *)obj;
-        if([str caseInsensitiveCompare:@"G"] == NSOrderedAscending){
-            return YES;
-        }else{
-            return NO;
-        }
-    };
 }
 
 @end
